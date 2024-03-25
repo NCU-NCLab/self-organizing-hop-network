@@ -1,12 +1,12 @@
 # self-organizing-hop-network 
 ## Installation and Deployment Guide
-### Step 1 - Install package needed and Get appcation code
+### Step 1 - Install package needed and Get application code
 Install package
 * net-tools ifupdown: check network setting and network control
 * nginx-light libnginx-mod-rtmp: RTMP server
 * hostapd: Access point host
-* git: Get appcation code From GitHub
-* python3-opencv: Appcation used package
+* git: Get application code From GitHub
+* python3-opencv: Application used package
 ```bash
 sudo apt-get update
 sudo apt-get install -y net-tools ifupdown
