@@ -6,12 +6,14 @@ Install package
 * nginx-light libnginx-mod-rtmp: RTMP server
 * hostapd: Access point host
 * git: Get appcation code From GitHub
+* python3-opencv: Appcation used package
 ```bash
 sudo apt-get update
 sudo apt-get install -y net-tools ifupdown
 sudo apt-get install -y nginx-light libnginx-mod-rtmp
 sudo apt-get install -y hostapd
 sudo apt-get install -y git
+sudo apt-get install -y python3-opencv ffmpeg
 ```
 Get code from GitHub
 ```bash
@@ -162,4 +164,14 @@ Run relay code and replace <id> as device id(Example: 2) and interface id "wlxxx
 ```bash=
 cd ~/self-organizing-hop-network
 sudo python3 video_relay.py <id> wlxxxxxxxxxx123
+```
+#### Debug
+If the following show
+```bash
+RTNETLINK answers: File exists
+Failed to bring up 
+```
+Fix by this command
+```bash
+sudo ip addr flush dev <interface_id>
 ```
